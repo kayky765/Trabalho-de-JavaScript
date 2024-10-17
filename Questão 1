@@ -1,0 +1,18 @@
+function contarOcorrencias(array) {
+    const ocorrencias = {};
+
+    array.forEach(numero => {
+        if (ocorrencias[numero]) {
+            ocorrencias[numero]++;
+        } else {
+            ocorrencias[numero] = 1;
+        }
+    });
+
+    return ocorrencias;
+}
+
+// EX de Funcionameto
+const numeros = [1, 2, 3, 4, 5, 6, 9];
+const resultado = contarOcorrencias(numeros);
+console.log(resultado); 
