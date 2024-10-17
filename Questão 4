@@ -1,0 +1,23 @@
+function ehPalindromo(texto) {
+   
+    const textoLimpo = texto.replace(/\s+/g, '').toLowerCase();
+    
+   
+    const textoInvertido = textoLimpo.split('').reverse().join('');
+    
+    return textoLimpo === textoInvertido;
+}
+
+
+const palavra1 = "Casa";
+const palavra2 = "O sol brilha no céu azul.";
+const palavra3 = "Ferrari";
+const palavra4 = "Caminhei pelo parque em uma tarde tranquila.";
+const palavra5 = "As flores no jardim balançam com a brisa suave.";
+
+
+console.log(ehPalindromo(palavra1)); 
+console.log(ehPalindromo(palavra2)); 
+console.log(ehPalindromo(palavra3)); 
+console.log(ehPalindromo(palavra4));
+console.log(ehPalindromo(palavra5));
